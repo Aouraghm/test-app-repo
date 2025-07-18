@@ -1,10 +1,13 @@
 harborAdminPassword: Harbor12345
-externalURL: http://localhost:30080
+externalURL: http://localhost:30002
 
 expose:
   type: nodePort
   tls:
     enabled: false
+features:
+  chartMuseum:
+    enabled: false  # omdat je OCI gebruikt
 
 database:
   internal:
